@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:background="@color/header_bg" >
+    <TextView
+        android:id="@+id/location_name"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:onClick="locationclick"
+        android:singleLine="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:clickable="true"
+        android:drawablePadding="5dip"
+        android:drawableRight="@drawable/local_icon"
+        android:text="@string/default_city"
+        android:textColor="@color/red_zt" />
+   <!--  <ImageView
+        android:id="@+id/img_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/location_name"
+        android:layout_centerVertical="true"
+        android:src="@drawable/local_icon"
+        android:layout_marginLeft="5dip"
+        android:contentDescription="@string/nothing"
+        /> -->
+<!-- 去掉每次进入edittext都获取焦点的效果 -->
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+                <requestFocus />
+            </LinearLayout>
+    
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:layout_marginRight="15dip"
+        android:background="@color/transparent"
+        android:drawableRight="@drawable/btn_qr_scan" 
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/location_name"
+        android:layout_toLeftOf="@id/btn_scan"
+		android:background="@drawable/bg_btn_search"
+		android:drawableLeft="@drawable/bg_search_left"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:paddingLeft="10dip"
+        android:hint="@string/header_hint"
+        android:onClick="onSearchClick"
+        
+ />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="102dip"
+         >
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/nothing"
+            android:src="@drawable/shadow_light" />
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="130dip"
+            android:layout_height="82dip"
+            android:layout_below="@id/line2"
+            android:layout_marginLeft="10dip"
+            android:contentDescription="@string/nothing"
+            android:layout_marginTop="10dip" />
+
+        <ImageView
+            android:id="@+id/img_product_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:contentDescription="@string/nothing"
+            android:src="@drawable/img_product_tag" />
+
+        <TextView
+            android:id="@+id/tv_product_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_product_tag"
+            android:layout_marginLeft="13dip"
+            android:layout_marginRight="2dip"
+            android:layout_toRightOf="@id/img_product"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:textColor="@color/default_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_product"
+            android:layout_alignLeft="@id/tv_product_tittle"
+            android:layout_marginBottom="-4dip"
+            android:background="@color/transparent"
+            android:text="28"
+            android:textColor="@color/red_alltg_price"
+            android:textSize="16sp" />
+        <TextView
+          android:id="@+id/tv_product_sells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_product"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:textColor="@color/gray_tg_detail"
+            android:textSize="10sp"
+            />
+    </RelativeLayout>

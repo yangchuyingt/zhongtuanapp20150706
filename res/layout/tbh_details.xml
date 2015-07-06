@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/x_bar_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/largeimage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="143dip"
+                    android:contentDescription="@string/nothing"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/activity_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dip"
+                    android:background="@drawable/activity_line"
+                    android:contentDescription="@string/nothing" />
+
+                <TextView
+                    android:id="@+id/details"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dip"
+                    android:layout_marginTop="7dip"
+                    android:textColor="#323232"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cut1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="7dip"
+                    android:layout_marginTop="7dip"
+                    android:background="#eeeeee" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/time_distance_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/time_distance_tv"
+                        android:text="147"
+                        android:textColor="#e60014"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/time_distance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/sum"
+                        android:layout_marginLeft="7dip"
+                        android:text="@string/time_sum"
+                        android:textColor="#323232"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/sum"
+                        android:layout_toRightOf="@+id/time_distance_sum"
+                        android:text="@string/person"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="7dip"
+                android:background="#FFFFFF" >
+
+                <CheckBox
+                    android:id="@+id/up_down_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:background="@drawable/activities_checkbox2"
+                    android:button="@null" />
+
+                <TextView
+                    android:id="@+id/mobmemo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/up_down_btn" />
+            </RelativeLayout>
+
+            
+           
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/tbhsignupbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:onClick="onTBHSignUpBtnClick"
+        android:background="@drawable/sign_up_btn" />
+
+</LinearLayout>

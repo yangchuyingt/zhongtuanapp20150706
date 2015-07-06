@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/near_category_bg"
+    android:orientation="vertical" >
+    <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_house"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dip"
+                        android:drawableTop="@drawable/btn_activities_house"
+                        android:paddingBottom="11dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/btn_activities_house"
+                        android:textColor="@color/default_black"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_furniture"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dip"
+                        android:drawableTop="@drawable/btn_activities_furnirture"
+                        android:paddingBottom="11dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/btn_activities_furniture"
+                        android:textColor="@color/default_black"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_wedding"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dip"
+                        android:drawableTop="@drawable/btn_activities_wedding"
+                        android:paddingBottom="11dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/btn_activities_wedding"
+                        android:textColor="@color/default_black"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_car"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dip"
+                        android:drawableTop="@drawable/btn_activities_car"
+                        android:paddingBottom="11dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/btn_activities_car"
+                        android:textColor="@color/default_black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_1"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_education"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dip"
+                        android:drawableTop="@drawable/btn_activities_education"
+                        android:paddingBottom="11dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/btn_activities_education"
+                        android:textColor="@color/default_black"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_xq"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dip"
+                        android:drawableTop="@drawable/btn_activities_xq"
+                        android:paddingBottom="11dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/btn_activities_xq"
+                        android:textColor="@color/default_black"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_party"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dip"
+                        android:drawableTop="@drawable/btn_activities_party"
+                        android:paddingBottom="11dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/btn_activities_party"
+                        android:textColor="@color/default_black"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_tbh"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:drawablePadding="10dip"
+                        android:drawableTop="@drawable/btn_activities_tbh"
+                        android:paddingBottom="11dip"
+                        android:paddingTop="10dip"
+                        android:text="@string/btn_activities_tbh"
+                        android:textColor="@color/default_black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                
+
+</LinearLayout>

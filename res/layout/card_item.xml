@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#eeeef0"
+    android:orientation="vertical"
+    android:paddingBottom="7dip"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_product_tm"
+            android:layout_width="158dip"
+            android:layout_height="148dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/img_product_tm_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23dip"
+            android:contentDescription="@null"
+            android:src="@drawable/img_product_tm_tag" />
+
+        <ImageView
+            android:id="@+id/img_product_tm_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_product_tm"
+            android:layout_alignRight="@id/img_product_tm"
+            android:layout_below="@id/img_product_tm"
+            android:contentDescription="@null"
+            android:layout_marginTop="-2dip"
+            android:src="@drawable/tm_shadow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dip"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip" >
+
+        <TextView
+            android:id="@+id/tv_tm_product_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="电影"
+            android:textColor="@color/default_black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_tm_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tm_product_name"
+            android:layout_alignLeft="@id/tv_tm_product_name"
+            android:text="188"
+            android:textColor="#ff0000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_tm_prime_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_tm_price"
+            android:layout_alignBottom="@id/tv_tm_price"
+            android:layout_marginLeft="10dip"
+            android:layout_marginBottom="2dip"
+            android:text="288"
+            android:textColor="#9b9b9b"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_tm_add"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tm_price"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_tm_buynow" />
+    </RelativeLayout>
+
+</LinearLayout>

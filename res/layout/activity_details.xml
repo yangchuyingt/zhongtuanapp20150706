@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/x_bar_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="182dip"
+                    android:contentDescription="@string/nothing"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/activity_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dip"
+                    android:background="@drawable/activity_line"
+                    android:contentDescription="@string/nothing" />
+
+                <TextView
+                    android:id="@+id/tittlemsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dip"
+                    android:layout_marginTop="7dip"
+                    android:textColor="#323232"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cut1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="7dip"
+                    android:layout_marginTop="7dip"
+                    android:background="#eeeeee" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip" >
+
+                    <TextView
+                        android:id="@+id/sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/sign_up_tv"
+                        android:text="147"
+                        android:textColor="#e60014"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/sign_up_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/sum"
+                        android:layout_marginLeft="7dip"
+                        android:text="@string/person_sum"
+                        android:textColor="#323232"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/sum"
+                        android:layout_toRightOf="@+id/sum"
+                        android:text="@string/person"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dip"
+                android:background="#FFFFFF" >
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:background="@drawable/activities_chebox1"
+                    android:button="@null" />
+
+                <WebView
+                    android:id="@+id/content1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/checkbox1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dip"
+                android:background="#FFFFFF" >
+
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:background="@drawable/activities_checkbox2"
+                    android:button="@null" />
+
+                <WebView
+                    android:id="@+id/content2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/checkbox2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dip"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/imageview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_brand"
+                    android:contentDescription="@string/nothing" />
+
+                <WebView
+                    android:id="@+id/content3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageview1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dip"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/imageview2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_transportation"
+                    android:contentDescription="@string/nothing" />
+
+                <WebView
+                    android:id="@+id/content4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageview2" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSignUpBtnClick"
+        android:background="@drawable/bg_activity_signup" />
+
+</LinearLayout>

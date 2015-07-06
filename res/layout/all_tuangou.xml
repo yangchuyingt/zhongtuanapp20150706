@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/near_background"
+    android:orientation="vertical" >
+    <include layout="@layout/x_bar_title"/>
+    <RadioGroup
+        android:id="@+id/radiogroup_category"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/near_business_bg1"
+        android:gravity="center"
+        
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/btn_allcategory"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableRight="@drawable/category_button"
+            android:gravity="center"
+            android:paddingRight="17dip"
+            android:text="@string/btn_near_business_allcategory"
+            android:textColor="@color/default_black"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/btn_wholecity"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableRight="@drawable/category_button"
+            android:gravity="center"
+            android:paddingRight="17dip"
+            android:text="@string/btn_near_business_wholecity"
+            android:textColor="@color/default_black"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/btn_smartsort"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableRight="@drawable/category_button"
+            android:gravity="center"
+            android:paddingRight="17dip"
+            android:text="@string/btn_near_business_smartsort"
+            android:textColor="@color/default_black"
+            android:textSize="14sp" />
+        <RadioButton
+            android:id="@+id/btn_person_sum"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawableRight="@drawable/category_button"
+            android:gravity="center"
+            android:paddingRight="17dip"
+            android:text="@string/btn_near_business_person_sum"
+            android:visibility="gone"
+            android:textColor="@color/default_black"
+            android:textSize="14sp" />
+         <RadioButton
+            android:id="@+id/btn_wuchuo"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:visibility="gone"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <ListView
+        android:layout_marginTop="10dip"
+        android:id="@+id/list_near_business_product"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/white"
+        android:divider="@drawable/shadow_light"/>
+
+</LinearLayout>

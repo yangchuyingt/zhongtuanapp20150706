@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/near_background" >
+
+    <include
+        android:id="@+id/h"
+        layout="@layout/x_bar_title" />
+
+    <ImageView
+        android:id="@+id/shadow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/h"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_light" />
+
+    <TextView
+        android:id="@+id/jbxx"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/shadow1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="@string/jbxx"
+        android:textColor="@color/default_black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/shadow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jbxx"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" />
+
+    <ImageView
+        android:id="@+id/shadow0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shadow2"
+        android:layout_marginTop="10dip"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" />
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/shadow0"
+        android:background="@color/white"
+        android:paddingLeft="10dip"
+        android:hint="@string/t1" />
+
+    <ImageView
+        android:id="@+id/shadow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_light" />
+
+
+
+    <EditText
+        android:id="@+id/et_tel"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/shadow3"
+        android:background="@color/white"
+        android:paddingLeft="10dip"
+        android:inputType="number"
+        android:hint="@string/t3" />
+
+    <ImageView
+        android:id="@+id/shadow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_tel"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_light" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/shadow5"
+        android:background="@color/white"
+        android:paddingLeft="10dip"
+        android:hint="@string/t4" />
+
+    <ImageView
+        android:id="@+id/shadow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_address"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_light" />
+
+    <EditText
+        android:id="@+id/et_etc"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_below="@id/shadow6"
+        android:background="@color/white"
+        android:paddingLeft="10dip"
+        android:lines="3"
+        android:singleLine="false"
+        android:hint="@string/t5" />
+
+    <ImageView
+        android:id="@+id/shadow7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_etc"
+        android:contentDescription="@string/nothing"
+        android:src="@drawable/shadow_heavy" />
+    
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_activitysign_up"
+        />
+
+</RelativeLayout>
